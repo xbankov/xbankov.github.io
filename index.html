@@ -1,1 +1,234 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Mikuláš Bankovič</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version) -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap) -->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Mikuláš Bankovič</span>
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                    src="assets/img/profile.jpg" alt="Profile Picture" /></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content -->
+    <div class="container-fluid p-0">
+        <!-- About -->
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h1 class="mb-0">
+                    Mikuláš
+                    <span class="text-primary">Bankovič</span>
+                </h1>
+                <div class="subheading mb-5">
+                    Marie-Claus-Straße 3 · Heidelberg, DE 69129 · +421 917 384 791 ·
+                    <a href="mailto:mikulas.bankovic27@gmail.com">mikulas.bankovic27@gmail.com</a>
+                </div>
+                <p class="lead mb-5">I am a dedicated data scientist with a profound passion for applying data science
+                    across various domains. With 4-5 years of hands-on experience in Python and Deep Learning, including
+                    expertise in Computer Vision and Natural Language Processing, I bring a fresh perspective to every
+                    project I take on.</p>
+                <div class="social-icons">
+                    <a class="social-icon" href="https://www.linkedin.com/in/mikulas-bankovic/"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="social-icon" href="https://github.com/xbankov"><i class="fab fa-github"></i></a>
+                    <a class="social-icon" href="https://twitter.com/BankovicMikulas"><i class="fab fa-twitter"></i></a>
+                    <a class="social-icon" href="https://www.facebook.com/mikulas.bankovic"><i
+                            class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Experience -->
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Computer Vision Research Engineer</h3>
+                <div class="subheading mb-3">Masaryk University Brno</div>
+                <p>Mar 2022 – May 2023 (1 yr 3 mos)</p>
+                <p>Project Intelligent Back-Office was a university research project trying to compete with the startups
+                    trying to solve automatic document (scanned invoices) processing. I was responsible for the
+                    implementation of our own OCR system, working in low-resource language settings (Czech). I was
+                    provided annotated documents and needed to preprocess data and train models on them. Post-processing
+                    needed to be applied in order to correct some mistakes ( for example, the second OCR run with a
+                    limited character set after NER classifies the field as a number). The resulting pipeline was able
+                    to pay around 70% of the invoices from the low-quality scans/photos.</p>
+                <a href="https://www.fi.muni.cz/app/projects?project=64989">Project Link</a>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Student Research Assistant</h3>
+                <div class="subheading mb-3">Heidelberg University</div>
+                <p>Jan 2023 – Apr 2023 (4 mos)</p>
+                <p>In a HiWi position, I processed openly available CT scans and performed image registration between
+                    different breathing phases of a patient using the SimpleITK library and Elastix library. The work
+                    resulted in a comprehensive hyperparameter search and many visualization techniques. The best models
+                    were chosen to serve as a benchmark for a registration framework developed by the university.</p>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Machine Learning Researcher</h3>
+                <div class="subheading mb-3">Seznam.cz</div>
+                <p>Sep 2020 – Dec 2021 (1 yr 4 mos)</p>
+                <p>I was part of the research team for Mapy.cz (A better version of Google Maps :D ). I was responsible
+                    for creating a ranking model to improve search engine results. I processed millions of user
+                    interactions into a dataset and trained Machine Learning and Deep Learning models to find the best
+                    solution. I evaluated the results using an A/B test. The ranking improved on critical samples, but
+                    the metrics stayed close to the originals.</p>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Student Research Assistant</h3>
+                <div class="subheading mb-3">Masaryk University Brno</div>
+                <p>Jan 2021 – May 2021 (5 mos)</p>
+                <p>I was part of the Ahisto project, aiming to digitalize old Hussite texts. I had a small role in
+                    exploring the potential of super-resolution on the performance of the OCR system. My idea improved
+                    OCR performance significantly, probably due to the assumptions of the OCR systems.</p>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Machine Learning Engineer</h3>
+                <div class="subheading mb-3">[Company Name]</div>
+                <p>Jan 2020 – Feb 2020 (2 mos)</p>
+                <p>The idea was to predict housing prices in the USA. Startup went bankrupt in 1 month, although I
+                    learned to basics for working with AWS servers and data storage and implemented a custom PyTorch
+                    neural network to compete with already implemented gradient boosting models.</p>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Jr Python Developer</h3>
+                <div class="subheading mb-3">Resideo</div>
+                <p>Oct 2018 – Oct 2019 (1 yr 1 mo)</p>
+                <p>My task was to scrape reviews of the products on Amazon, BestBuy, etc. (avoiding APIs and Captcha)
+                    and perform sentiment analysis for QA to be able to determine problematic areas. Scraping was very
+                    successful but needed weekly maintenance due to website changes. Sentiment analysis was less
+                    successful as manual control showed a lot of errors, however, still helped to locate problems in the
+                    products.</p>
+            </div>
+        </div>
+        <!-- Education -->
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Master's degree, Artificial Intelligence and Data Processing</h3>
+                <div class="subheading mb-3">Masaryk University Brno</div>
+                <p>Sep 2020 – Jun 2023</p>
+                <p>Your description here...</p>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Erasmus+ traineeship, Artificial Intelligence and Data Processing</h3>
+                <div class="subheading mb-3">DKFZ German Cancer Research Center</div>
+                <p>Oct 2022 – Jul 2023</p>
+                <p>The goal was to compare generative models used for image synthesis in the medical domain. I used my
+                    own preprocessing techniques for CT scans of 300 patients, e.g. own table removal and background
+                    replacement. I used libraries for GANs and Diffusion models and trained models on a newly
+                    constructed dataset. I was able to produce results similar to the original samples with both
+                    methods, with their respective drawbacks and benefits.</p>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Erasmus+ Exchange, Computer Science</h3>
+                <div class="subheading mb-3">University of Bergen (UiB)</div>
+                <p>Jan 2022 – Jul 2022</p>
+                <p>Your description here...</p>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Bachelor's degree, Artificial Intelligence and Natural Language Processing</h3>
+                <div class="subheading mb-3">Masaryk University Brno</div>
+                <p>Sep 2016 – Jun 2020</p>
+                <p>Your description here...</p>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Erasmus+ Exchange, Computer Science</h3>
+                <div class="subheading mb-3">University of Tartu</div>
+                <p>Sep 2019 – Dec 2019</p>
+                <p>Your description here...</p>
+            </div>
+        </div>
+        <!-- Skills -->
+        <div class="subheading mb-3">Skills</div>
+        <ul class="list-inline dev-icons">
+            <li class="list-inline-item"><i class="fab fa-python"></i> Python</li>
+            <li class="list-inline-item"><i class="fab fa-pytorch"></i> PyTorch</li>
+            <li class="list-inline-item"><i class="fab fa-numpy"></i> numpy</li>
+            <li class="list-inline-item"><i class="fab fa-pandas"></i> pandas</li>
+            <li class="list-inline-item"><i class="fas fa-chart-bar"></i> matplotlib</li>
+            <li class="list-inline-item"><i class="fab fa-plotly"></i> plotly</li>
+            <li class="list-inline-item"><i class="fab fa-hadoop"></i> Hadoop</li>
+            <li class="list-inline-item"><i class="fab fa-pyspark"></i> PySpark</li>
+            <li class="list-inline-item"><i class="fab fa-git"></i> Git</li>
+            <li class="list-inline-item"><i class="fab fa-docker"></i> Docker</li>
+            <li class="list-inline-item"><i class="fas fa-cogs"></i> CI/CD pipelines</li>
+        </ul>
+        <div class="subheading mb-3">Other Skills</div>
+        <ul class="fa-ul mb-0">
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>Image Processing
+            </li>
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>Data Science
+            </li>
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>Deep Learning
+            </li>
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>Machine Learning
+            </li>
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>Linux
+            </li>
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>Data Visualization
+            </li>
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>Natural Language Processing (NLP)
+            </li>
+        </ul>
