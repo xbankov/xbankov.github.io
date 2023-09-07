@@ -617,7 +617,7 @@ progress {
 }
 
 .list-inline-item {
-  display: inline-block;
+  display: block;
 }
 
 .list-inline-item:not(:last-child) {
@@ -12740,7 +12740,7 @@ p.lead {
 }
 
 .dev-icons {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 section.resume-section {
