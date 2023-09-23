@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+// Define custom variables
+$text-color: #aaaaaa;
+$primary-accent-color: #4d6b61;
+$secondary-accent-color: #00410f;
+$hover-accent-color: #04cece;
+$background-color: #0b2b20;
+$navbar-background-color: #05140f;
+
+// Redefine Bulma variables
+$title-color: $primary-accent-color;
+$primary: $primary-accent-color;
+$link: $secondary-accent-color;
+
+$text: $text-color;
+$background: $navbar-background-color;
+$body-background-color: $background-color;
+
+@import "~bulma/bulma";
+
+nav.navbar {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 18px;
+}
+nav.navbar .navbar-item:hover {
+  background-color: $navbar-background-color;
+  color: $hover-accent-color;
+}
+
+.underline-on-hover {
+  position: relative;
+  text-decoration: none;
+}
+
+.underline-on-hover::after {
+  content: "";
+  position: absolute;
+  left: 50%; /* Start from the middle */
+  bottom: 0;
+  width: 0; /* Initial state: no width */
+  height: 2px; /* Adjust the height to control the thickness of the underscore */
+  background-color: $hover-accent-color; /* Adjust the color as needed */
+  transform: translateX(-50%) translateY(-6px); /* Move it up a bit and center horizontally */
+  transform-origin: bottom left;
+  transition: width 0.3s ease; /* Adjust the transition duration as needed */
+}
+
+.underline-on-hover:hover::after {
+  width: 100%; /* On hover, expand the width to 100% */
+}
