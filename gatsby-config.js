@@ -19,7 +19,7 @@ module.exports = {
         name: "My Awesome Site",
         short_name: "My Site",
         display: "standalone",
-        icon: "src/images/favicon.png",
+        icon: "src/images/icon.png",
       },
     },
     {
@@ -29,6 +29,13 @@ module.exports = {
         path: "./src/images/",
       },
       __key: "images",
+    },
+    {
+      resolve: "gatsby-plugin-google-fonts",
+      options: {
+        fonts: ["Saira Extra Condensed", "Saira Condensed", "Saira", "Saira Stencil One"],
+        display: "swap",
+      },
     },
   ],
 };

@@ -1,31 +1,114 @@
 @charset "utf-8";
 
-// Define custom variables
-$text-color: #aaaaaa;
-$primary-accent-color: #4d6b61;
-$secondary-accent-color: #00410f;
-$hover-accent-color: #04cece;
-$background-color: #0b2b20;
-$navbar-background-color: #05140f;
+// ##########################
+// ########## COLORS ########
+// ##########################
 
-// Redefine Bulma variables
-$title-color: $primary-accent-color;
-$primary: $primary-accent-color;
-$link: $secondary-accent-color;
+// $primary: #0b2b20;
+// $backround-color: #262726;
+// $link: #217e5c; // Link color (darker teal)
+// $navbar-hover: #384555;
+// $info: #217e5c;
+// $success: #929292; // Success color (green)
+// $warning: #ffc107; // Warning color (yellow)
+// $danger: #dc3545; // Danger color (red)
+// $white: #ffffff;
 
-$text: $text-color;
-$background: $navbar-background-color;
-$body-background-color: $background-color;
+// $primary: $turquoise
+// $link: $blue
+// $info: $cyan
+// $success: $green
+// $warning: $yellow
+// $danger: $red
+// $dark: $grey-darker
+// $text: $grey-dark
 
-@import "~bulma/bulma";
+// $background: $white-ter;
+// $link: $blue: the links use the primary color
+// $footer-background-color: $primary;
+// $footer-color: $white;
+// $navbar-background-color: $primary;
+// $navbar-item-hover-background-color: $navbar-hover;
+// $navbar-item-hover-color: $info;
+// $navbar-item-color: $white;
+// .navbar-burger:hover {
+//   background-color: $navbar-hover !important;
+//   color: $white !important;
+// }
+// body {
+//   background-color: $backround-color;
+// }
 
-nav.navbar {
-  font-family: "Saira Extra Condensed", sans-serif;
-  font-size: 18px;
+// ##########################
+// ########## FONTS #########
+// ##########################
+$family-secondary: "Saira Condensed";
+
+.is-family-special {
+  font-family: "Saira Stencil One";
 }
-nav.navbar .navbar-item:hover {
-  background-color: $navbar-background-color;
-  color: $hover-accent-color;
+.is-family-terciary {
+  font-family: "Saira";
+}
+
+// ##########################
+// ########## FOOTER ########
+// ##########################
+
+$footer-padding: 0;
+.footer-height {
+  height: 4.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.has-footer-shadow-with-gradient {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.has-footer-shadow-with-gradient::before {
+  content: "";
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px; /* Adjust the height of the shadow as needed */
+  background: linear-gradient(
+    to bottom,
+    rgb(54, 54, 54),
+    rgba(38, 39, 38, 0.2)
+  );
+  pointer-events: none; /* Make sure the shadow doesn't interfere with content */
+  z-index: 1; /* Adjust the z-index as needed */
+}
+
+// ##########################
+// ########## NAVBAR ########
+// ##########################
+
+$navbar-height: 4.375rem;
+
+.navbar-custom-padding {
+  padding-left: 16%;
+  padding-right: 16%;
+  margin-bottom: 4%;
+}
+
+.has-navbar-shadow-with-gradient::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 6px; /* Adjust the height of the shadow as needed */
+  background: linear-gradient(
+    to bottom,
+    rgb(54, 54, 54),
+    rgba(38, 39, 38, 0.2)
+  );
+  pointer-events: none; /* Make sure the shadow doesn't interfere with content */
+  z-index: 1; /* Adjust the z-index as needed */
 }
 
 .underline-on-hover {
@@ -35,17 +118,82 @@ nav.navbar .navbar-item:hover {
 
 .underline-on-hover::after {
   content: "";
+  // background-color: $white; /* Color of the underline*/
   position: absolute;
   left: 50%; /* Start from the middle */
-  bottom: 0;
+  bottom: 15%;
   width: 0; /* Initial state: no width */
   height: 2px; /* Adjust the height to control the thickness of the underscore */
-  background-color: $hover-accent-color; /* Adjust the color as needed */
-  transform: translateX(-50%) translateY(-6px); /* Move it up a bit and center horizontally */
+  transform: translateX(-50%);
   transform-origin: bottom left;
   transition: width 0.3s ease; /* Adjust the transition duration as needed */
 }
 
 .underline-on-hover:hover::after {
-  width: 100%; /* On hover, expand the width to 100% */
+  width: 80%;
 }
+
+.hover-scale {
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.hover-scale:hover {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .underline-on-hover::after {
+    content: "";
+    // background-color: $white; /* Color of the underline*/
+    position: absolute;
+    left: 50%; /* Start from the middle */
+    bottom: 10%;
+    width: 0;
+    height: 2px;
+    transform: translateX(-50%);
+    transform-origin: bottom left;
+    transition: width 0.3s ease;
+  }
+
+  .underline-on-hover:hover::after {
+    width: 95%; /* Set to 95% width on mobile devices */
+  }
+}
+
+// ##########################
+// ########## Photo ########
+// ##########################
+.circular-container {
+  width: 280px; /* Adjust the width as needed */
+  height: 280px; /* Adjust the height as needed */
+  border-radius: 50%; /* Makes it circular */
+  overflow: hidden; /* Crop overflow content */
+}
+
+// ##########################
+// ########## Body ########
+// ##########################
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.body-container {
+  padding-left: 16%;
+  padding-right: 16%;
+}
+
+.resume-section {
+  @extend .mt-4;
+}
+
+.custom-title {
+  @extend .title;
+  @extend .is-1;
+  font-family: $family-secondary;
+}
+
+@import "~bulma/bulma";
